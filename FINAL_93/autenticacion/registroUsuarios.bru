@@ -1,0 +1,25 @@
+meta {
+  name: registroUsuarios
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3005/api/auth/register
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "firstName" : "ad", 
+    "lastName" : "aa" , 
+    "email" : "iep@1111.co" , 
+    "password" : "111" , 
+    "isAdmin" : false
+  }
+}

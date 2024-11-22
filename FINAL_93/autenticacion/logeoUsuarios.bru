@@ -1,0 +1,22 @@
+meta {
+  name: logeoUsuarios
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3005/api/auth/login
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "email" : "iep@1111.co",
+    "password": "111"
+  }
+}
